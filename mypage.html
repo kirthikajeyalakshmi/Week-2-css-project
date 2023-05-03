@@ -5,49 +5,167 @@
         <meta name="description" content="this is the description of the webpage">
         <meta name="keywords" content="HTML">
         <title>My fav country</title>
-        <link rel="icon" href="Images/japanflag.jfif" type="image/jpg">
+        <link rel="icon" href="Images/japan-flag-std.jpg" type="image/jpg">
+        <style>
+            body {
+                background-color:aliceblue;
+            }
+            h1{
+                width: 800px;
+                height: 100px;
+                background-image: url(Images/bg\ clip.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                font-size: 50px;
+                text-align: center;
+                color: transparent;
+                -webkit-background-clip: text;
+            }
+            h2 {
+                font-family: 'Lucida Sans Unicode';
+                color: red;
+            }
+            .font{
+                font-family:  Helvetica;
+                font-style: italic;
+                background-color: yellow;
+            }
+            .highlight{
+                font-style:italic;
+                text-decoration: underline;
+
+            }
+            div{
+                height: 250px;
+                width: 300px;
+                border:2px solid #332;
+                background-image: linear-gradient(aqua,powderblue,red),url(Images/sushi.jpg);
+                background-size: cover;
+                background-blend-mode: saturation;
+            }
+            h4 {
+                border: 1px solid black;
+                margin-top: 120px;
+                margin-bottom: 130px;
+                margin-right: 160px;
+                margin-left: 90px;
+
+                border: 1px solid black;
+                background-color: lightblue;
+                padding-top: 50px;
+                padding-right: 30px;
+                padding-bottom: 50px;
+                padding-left: 80px;
+            }
+            animation {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                animation-name: example;
+                animation-duration: 4s;
+                 animation-iteration-count: 3;
+           }
+
+        @keyframes example {
+        0%   {background-color:aliceblue; left:0px; top:0px;}
+        25%  {background-color:aliceblue; left:200px; top:0px;}
+        50%  {background-color:aliceblue; left:200px; top:250px;}
+         75%  {background-color:aliceblue; left:0px; top:250px;}
+        100% {background-color:aliceblue; left:0px; top:0px;}
+           }
+        </style>
     </head>
-    <body bgcolor="lightgrey">
+    <body>
         <header>
-        <h1><FONT color="red">PLACES IN JAPAN</FONT></h1>
-            <nav>
-                <ol><li><a href="#tokyo">Tokyo</a></li>
-                    <li><a href="#Kyoto">Kyoto</a></li>
-                    <li><a href="#Osaka">Osaka</a></li>
-                </ol>
-            </nav>
+        <h1>PLACES IN JAPAN</h1>
+        <aside>
+            <details>
+                <summary>
+                    <h3> Cities in japan </h3>
+                </summary>
+                <p>
+                    <nav>
+                        <ol><li><a href="#tokyo">Tokyo</a></li>
+                            <li><a href="#Kyoto">Kyoto</a></li>
+                            <li><a href="#Osaka">Osaka</a></li>
+                        </ol>
+                    </nav>
+                </p>
+            </details>
+        </aside>
+        <br>
+        <aside>
+            <details>
+                <summary>
+                    <h3>Foods in japan</h3>
+                </summary>
+                <p>
+                    <nav>
+                        <ol><li><a href="#sushi">sushi</a></li>
+                            <li><a href="#sukiyaki">sukiyaki</a></li>
+                        </ol>
+                    </nav>
+                </p>
+            </details>
+        </aside>
         </header>
            <main>
         <section id="tokyo">
             <h2>1.TOKYO</h2>
-                    <p> Tokyo is a city forever reaching into the future, pushing the boundaries of what's possible on densely populated, earthquake-prone land, adding ever taller, sleeker structures. It's Japan's top spot for contemporary art and architecture, pop culture, shopping, drinking and entertainment (and a tie with Kyoto for dining). </p>
+                    <p> Tokyo is a city forever reaching into the future, pushing the boundaries of what's possible on densely populated, earthquake-prone land, adding ever taller, sleeker structures. <sapn class="font">It's Japan's top spot for contemporary art and architecture, pop culture, shopping, drinking and entertainment (and a tie with Kyoto for dining). </sapn></p>
                     <center>
                         <figure>
-                            <img src="Images/Tokyo-7793.jpg" alt="tokyo" height="350" width="400">
+                            <img src="Images/Tokyo-Tower-at-Night-1024x856.jpg" alt="tokyo" height="350" width="400">
                             <figcaption><a href="https://www.britannica.com/place/Tokyo">To know more about tokyo</a></figcaption>
                         </figure></center>
         </section> 
         <section id="Kyoto">            
-            <h2>2.Kyoto</h2>
-                    <p>Travelers most interested in Japan's history and traditions should head to Kyoto. Centrally located on the archipelago, Kyoto has long been considered the cultural capital of Japan. Here, you'll find more than 1,000 Buddhist temples and 400-plus Shinto shrines, including a whopping 17 UNESCO World Heritage sites.</p>
+            <h2>2.KYOTO</h2>
+                    <p><span class="highlight">Travelers most interested in Japan's history and traditions should head to Kyoto.</span> Centrally located on the archipelago, Kyoto has long been considered the cultural capital of Japan. Here, you'll find more than 1,000 Buddhist temples and 400-plus Shinto shrines, including a whopping 17 UNESCO World Heritage sites.</p>
         </section>    
                     <center>
                         <figure>
-                            <img src="Images/th (1).jfif" alt="kyota" height="350" width="400">
+                            <img src="Images/iStock-509472000.jpg"  alt="kyota" height="350" width="400">
                             <figcaption><a href="https://www.britannica.com/place/Kyoto-Japan">To know more about kyoto</a> </figcaption>
                        </figure></center> 
         <section id="Osaka">              
-            <h2>3.osaka</h2>
+            <h2>3.OSAKA</h2>
                     <p>Situated about 35 miles southwest of Kyoto, this port city is worth a visit for its food alone. One of the city's most famous dishes, the tasty pancake-like okonomiyaki (which means "grilled as you like it" in Japanese), is made with batter, cabbage and your choice of meat and other toppings.</p>
-        </section>  
-                    <center>
-                        <figure>
-                            <img src="Images/th.jfif" alt="osaka" height="350" width="400">
-                            <figcaption><a href="https://www.britannica.com/place/Osaka-Japan">To know more about osaka</a></figcaption>
-                        </figure></center>
-                        <center>
-                            <h3>VIDEO</h3>
-                            <video src="WhatsApp Video 2023-04-23 at 7.35.03 AM.mp4" width="550>" height="320" autoplay loop muted poster="poster.jpg"></video>
+        </section>
+        <center>
+            <figure>
+                <img src="Images/th.jfif" alt="osaka" height="350" width="400">
+                <figcaption><a href="https://www.britannica.com/place/Osaka-Japan">To know more about osaka</a></figcaption>
+            </figure></center>
+            <h4>Japan is a fascinating country with a long and rich history, filled with unique and interesting cultural customs. From its rich culinary culture to its breathtaking natural beauty, there is something for everyone to enjoy in Japan. With so much to see and do, it's no wonder why Japan is so well known around the world.</h4>
+        <h2>Foods that are most popular in japan:</h2>  
+        <section id="sushi">
+            <h3>1.SUSHI</h3>
+            <p><span class="highlight">Sushi is a Japanese dish featuring specially prepared rice and usually some type of fish or seafood, often raw, but sometimes cooked.</span> And though you might automatically associate the word sushi with raw fish, it's actually the rice that is the most important ingredient. Indeed, the word "sushi" refers to the sour flavor of the vinegared rice. Regardless of the toppings or fillings, sushi always includes rice.
+                As a matter of fact, sushi rice is so important that sushi chefs in Japan undergo years of training just to learn how to cook the rice properly, before they ever begin to handle any fish or seafood.</p>
+                <center>
+                    <!--img blend-->
+                    <div>
+                </div>
+                </center>
+        </section>
+        <section id="sukiyaki">
+            <h3>2.SUKIYAKI</h3>
+            <p>Sukiyaki is a one-pot dish (nabemono) that was developed during the Meiji era. Different regions have different ways of preparing sukiyaki. There are two main styles, the Kanto style from eastern Japan and Kansai style from western Japan.
+
+                In the Kanto style, warishita (a mixture of sake, soy sauce, sugar, mirin and dashi) is poured and heated in a pot, then meat, vegetables and other ingredients are added and simmered together. In Kansai-style sukiyaki, meat is heated in the pot first. When the meat is almost cooked, sugar, sake and soy sauce are added, then vegetables and other ingredients are added last.
+                
+                The vegetables and meat used are different between the two styles. Because beef was expensive in the past, the use of pork was common in northern and eastern regions. Other ingredients added to modern sukiyaki include chicken (tori-suki), fish (uo-suki or oki-suki), udon noodles (udon-suki), negi, shiitake mushrooms, shirataki and slightly grilled tofu. <span class="font">In both styles, raw eggs are used as a dipping sauce and steamed rice with black sesame seeds is served.</span></p>
+                <center>
+                    <figure><animation>
+                        <img src="Images/sukiyaki.jpg" alt="sukiyaki" width="150px" height="100px">
+                    </animation>
+                    </figure>
+                </center>
+        </section>   <center>
+                            <h2>The street of japan:</h2>
+                            <video src="WhatsApp Video 2023-04-23 at 7.35.03 AM.mp4" width="800" height="800" autoplay loop muted poster="poster.jpg"></video>
                         </center>
                         <table border="1">
                             <tr>
